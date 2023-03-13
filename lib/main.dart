@@ -70,9 +70,42 @@ class MyAppState extends State<MyApp> {
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Column(children: const [Text("10 km"), Text("20 jam, 30 menit")]),
-                        Column(children: const [Text("20 km"), Text("40 jam, 20 menit")]),
-                        Column(children: const [Text("2 km"), Text("2 jam")])
+                        Column(
+                            children: [
+                              Container(
+                                padding: const EdgeInsets.all(10),
+                                child: Image.network(
+                                    'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                                    width: 50,
+                                ),
+                              ),
+                              const Text("10 km"), Text("20 jam, 30 menit"),
+                              ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              child: Image.network(
+                                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                                width: 50,
+                              ),
+                            ),
+                            const Text("20 km"), Text("40 jam, 20 menit"),
+                          ],
+                        ),
+                        Column(
+                          children: [
+                            Container(
+                              padding: const EdgeInsets.all(10),
+                              child: Image.network(
+                                'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl-2.jpg',
+                                width: 50,
+                              ),
+                            ),
+                            const Text("2 km"), Text("20 jam"),
+                          ],
+                        ),
                       ],
                     )),
               ],
@@ -131,6 +164,8 @@ class ButtonPerjanjian extends StatelessWidget {
     );
   }
 }
+
+
 
 
 
