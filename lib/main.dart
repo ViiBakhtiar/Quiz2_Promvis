@@ -63,6 +63,7 @@ class MyAppState extends State<MyApp> {
                         pilihanTanggal = newValue;
                       }
                     });
+                    width: 80;
                   },
                 ),
                 Container(
