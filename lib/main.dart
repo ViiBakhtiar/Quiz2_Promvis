@@ -65,6 +65,16 @@ class MyAppState extends State<MyApp> {
                     });
                   },
                 ),
+                Container(
+                    padding: const EdgeInsets.all(25),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: [
+                        Column(children: const [Text("10 km"), Text("20 jam, 30 menit")]),
+                        Column(children: const [Text("20 km"), Text("40 jam, 20 menit")]),
+                        Column(children: const [Text("2 km"), Text("2 jam")])
+                      ],
+                    )),
               ],
             )), //column center
       ), //Scaffold
